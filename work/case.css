@@ -1,0 +1,99 @@
+/* Shared styles for every page inside /work/ — edit once, all six update. */
+
+:root{
+  --ink:#141A22;
+  --ink-soft:#26313C;
+  --paper:#EAE7DF;
+  --paper-warm:#F3F1EB;
+  --spot:#FF3D6E;
+  --grey:#77706A;
+  --rule:rgba(20,26,34,.16);
+
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --mono:"Space Mono",ui-monospace,monospace;
+
+  --gutter:clamp(20px,5vw,72px);
+  --stack:clamp(56px,8vw,110px);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--spot);outline-offset:3px}
+
+.wrap{max-width:1100px;margin:0 auto;padding-inline:var(--gutter)}
+.narrow{max-width:680px}
+
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1;letter-spacing:-.03em;margin:0}
+h1{font-size:clamp(38px,7vw,80px);letter-spacing:-.045em}
+h2{font-size:clamp(24px,3.2vw,34px)}
+h3{font-size:clamp(17px,2vw,20px);font-weight:600;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.lede{font-size:clamp(18px,2vw,22px);line-height:1.5}
+
+/* ---- top bar ---- */
+.bar{border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:40;
+     background:rgba(234,231,223,.92);backdrop-filter:blur(10px)}
+.bar-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.mark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.03em;text-decoration:none}
+.mark span{color:var(--spot)}
+.back{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+      text-decoration:none;color:var(--grey)}
+.back:hover{color:var(--spot)}
+
+/* ---- hero ---- */
+.case-hero{padding-block:clamp(44px,7vw,84px) clamp(28px,4vw,44px)}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+     color:var(--spot);margin:0 0 18px}
+.case-hero .lede{margin-top:24px;max-width:60ch;color:var(--ink-soft)}
+
+/* ---- fact strip ---- */
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);
+       margin-top:36px;border:1px solid var(--rule)}
+.facts div{background:var(--paper);padding:15px 17px}
+.facts dt{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+          color:var(--grey);margin:0 0 5px}
+.facts dd{margin:0;font-size:15px;font-weight:500;line-height:1.35}
+@media(max-width:760px){.facts{grid-template-columns:repeat(2,1fr)}}
+
+/* ---- body copy ---- */
+.body{padding-block:clamp(36px,5vw,60px)}
+.body h2{margin:44px 0 14px}
+.body h2:first-child{margin-top:0}
+.body ul{margin:0 0 1.2em;padding-left:1.1em}
+.body li{margin-bottom:.45em}
+
+/* ---- images ---- */
+.shot{margin:clamp(28px,4vw,48px) 0}
+.shot img{width:100%;border:1px solid var(--rule)}
+.shot figcaption{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
+                 text-transform:uppercase;color:var(--grey);margin-top:10px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,20px)}
+@media(max-width:640px){.pair{grid-template-columns:1fr}}
+
+/* ---- pull quote ---- */
+.pull{border-left:3px solid var(--spot);padding:4px 0 4px 22px;margin:36px 0;
+      font-family:var(--display);font-size:clamp(20px,2.6vw,27px);font-weight:600;
+      line-height:1.25;letter-spacing:-.02em}
+
+/* ---- footer nav ---- */
+.endbar{background:var(--ink);color:var(--paper-warm);padding-block:clamp(44px,6vw,72px);margin-top:var(--stack)}
+.endbar h2{margin-bottom:22px}
+.endnav{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;
+     text-transform:uppercase;text-decoration:none;padding:13px 22px;
+     background:var(--spot);color:var(--ink);border:1px solid var(--spot)}
+.btn--ghost{background:transparent;color:var(--paper-warm);border-color:rgba(234,231,223,.35)}
+.btn--ghost:hover{background:var(--paper-warm);color:var(--ink)}
+.endfoot{margin-top:32px;padding-top:22px;border-top:1px solid rgba(234,231,223,.2);
+         font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+         color:rgba(234,231,223,.45)}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sehan Dhananjaya — Marketing, Design & AI Production, Dubai</title>
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Sehan Dhananjaya — marketing manager, designer and AI content producer in Dubai. Brand launches, campaign creative and AI-generated product imagery.">
+
+<meta property="og:title" content="Sehan Dhananjaya — Marketing, Design & AI Production">
+<meta property="og:description" content="I run the campaign and make the work. Dubai, UAE.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://sehandhananjaya.github.io/images/share.jpg">
+<meta property="og:url" content="https://sehandhananjaya.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#141A22">
+<link rel="canonical" href="https://sehandhananjaya.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#141A22;
+  --ink-soft:#26313C;
+  --paper:#EAE7DF;
+  --paper-warm:#F3F1EB;
+  --spot:#FF3D6E;          /* fluorescent spot colour — the one loud thing */
+  --grey:#77706A;
+  --rule:rgba(20,26,34,.16);
+
+  --display:"Bricolage Grotesque",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,sans-serif;
+  --mono:"Space Mono",ui-monospace,monospace;
+
+  --gutter:clamp(20px,5vw,72px);
+  --stack:clamp(64px,9vw,132px);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:17px;
+  line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gutter)}
+.band{padding-block:var(--stack)}
+.band--ink{background:var(--ink);color:var(--paper-warm)}
+.band--ink .eyebrow{color:var(--spot)}
+.band--ink .rule{border-color:rgba(234,231,223,.2)}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--grey);
+  margin:0 0 20px;
+  display:flex;align-items:center;gap:12px;
+}
+.eyebrow::after{content:"";flex:1;height:1px;background:currentColor;opacity:.35}
+
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.98;letter-spacing:-.025em;margin:0}
+h2{font-size:clamp(30px,4.6vw,54px)}
+h3{font-size:clamp(19px,2vw,23px);font-weight:600;letter-spacing:-.01em;line-height:1.15}
+p{margin:0 0 1em}
+.lede{font-size:clamp(18px,1.9vw,21px);line-height:1.55}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(234,231,223,.9);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px}
+.mark{font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:-.03em;text-decoration:none}
+.mark span{color:var(--spot)}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav a{font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--grey)}
+.nav a:hover{color:var(--ink)}
+@media(max-width:680px){.nav ul{gap:16px}.nav a{font-size:10px;letter-spacing:.06em}}
+@media(max-width:460px){.nav li:nth-child(2){display:none}}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(56px,10vw,110px) clamp(48px,7vw,86px)}
+.hero h1{font-size:clamp(52px,12.5vw,158px);letter-spacing:-.05em}
+.hero h1 em{font-style:normal;display:block}
+.slash{color:var(--spot)}
+.hero-meta{
+  font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--grey);margin:24px 0 0;padding-top:20px;border-top:1px solid var(--rule);
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:clamp(28px,5vw,72px);margin-top:44px;align-items:start}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+
+.stats{display:grid;gap:2px;background:var(--rule)}
+.stat{background:var(--paper);padding:16px 18px}
+.stat b{display:block;font-family:var(--display);font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.03em;line-height:1}
+.stat span{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--grey)}
+
+.btn{
+  display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;padding:13px 22px;background:var(--ink);color:var(--paper-warm);border:1px solid var(--ink);
+}
+.btn:hover{background:var(--spot);border-color:var(--spot);color:var(--ink)}
+.btn--ghost{background:transparent;color:var(--ink)}
+.btn--ghost:hover{background:var(--ink);color:var(--paper-warm)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* ---------- the pyramid (signature) ---------- */
+.pyr{margin-top:44px;display:grid;gap:14px;justify-items:center}
+.note{
+  width:100%;border:1px solid rgba(234,231,223,.22);
+  padding:clamp(20px,3vw,32px);
+  display:grid;grid-template-columns:112px 1fr;gap:clamp(16px,3vw,40px);align-items:start;
+  transition:border-color .25s ease,background .25s ease;
+}
+.note:hover,.note:focus-within{border-color:var(--spot);background:rgba(255,61,110,.05)}
+.note--top{max-width:62%}
+.note--heart{max-width:82%}
+.note--base{max-width:100%}
+@media(max-width:900px){.note--top,.note--heart{max-width:100%}}
+@media(max-width:620px){.note{grid-template-columns:1fr;gap:10px}}
+.note-key{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--spot)}
+.note-key small{display:block;color:rgba(234,231,223,.5);letter-spacing:.08em;margin-top:4px;font-size:10px}
+.note h3{margin-bottom:8px}
+.note p{color:rgba(234,231,223,.72);margin:0 0 12px;font-size:15.5px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin:0;padding:0;list-style:none}
+.tags li{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;padding:4px 9px;border:1px solid rgba(234,231,223,.24);color:rgba(234,231,223,.8)}
+
+/* ---------- work ---------- */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px);margin-top:40px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+a.tile{position:relative;display:block;text-decoration:none;color:inherit;background:var(--paper-warm);border:1px solid var(--rule);overflow:hidden;transition:border-color .25s ease,transform .25s ease}
+a.tile:hover{border-color:var(--ink);transform:translateY(-3px)}
+a.tile:hover .tile-body h3{color:var(--spot)}
+.tile-body h3{transition:color .2s ease}
+.tile-more{display:inline-block;margin-top:11px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--spot);padding-bottom:2px}
+.tile-img{aspect-ratio:4/3;width:100%;object-fit:cover;transition:transform .5s ease}
+.tile:hover .tile-img{transform:scale(1.04)}
+.tile-body{padding:16px 18px 20px;border-top:1px solid var(--rule)}
+.tile-body h3{font-size:18px}
+.tile-body p{margin:6px 0 0;font-size:14.5px;color:var(--grey);line-height:1.5}
+.tile-tag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--spot);display:block;margin-bottom:7px}
+/* graceful placeholder when the image file isn't there yet */
+.tile.is-empty .tile-img{display:none}
+.tile.is-empty::before{
+  content:"Drop image here — see README";
+  display:flex;align-items:center;justify-content:center;text-align:center;
+  aspect-ratio:4/3;padding:20px;
+  font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--grey);
+  background:repeating-linear-gradient(45deg,transparent,transparent 9px,rgba(20,26,34,.05) 9px,rgba(20,26,34,.05) 18px);
+}
+
+/* ---------- motion ---------- */
+.reels{margin-top:40px}
+.reels-wide{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,26px);margin-bottom:clamp(14px,2vw,26px)}
+.reels-shorts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,26px)}
+.subhead{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(234,231,223,.45);margin:34px 0 14px}
+@media(max-width:900px){.reels-wide{grid-template-columns:1fr}.reels-shorts{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.reels-shorts{grid-template-columns:1fr}}
+.reel{border:1px solid rgba(234,231,223,.2)}
+.reel .frame{position:relative;aspect-ratio:16/9;background:#0C1218}
+.reel--vertical .frame{aspect-ratio:9/16}
+.reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.reel-body{padding:14px 16px 17px;border-top:1px solid rgba(234,231,223,.2)}
+.reel-body h3{font-size:16px}
+.reel-body span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:rgba(234,231,223,.5)}
+
+/* ---------- track record ---------- */
+.roles{margin-top:36px;border-top:1px solid var(--rule)}
+.role{display:grid;grid-template-columns:150px 1fr 190px;gap:clamp(14px,3vw,40px);padding:22px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+@media(max-width:760px){.role{grid-template-columns:1fr;gap:6px;padding:18px 0}}
+.role time,.role .where{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey)}
+.role h3{font-size:19px}
+.role p{margin:5px 0 0;font-size:15px;color:var(--grey)}
+
+/* ---------- contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);margin-top:36px;align-items:start}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr;gap:32px}}
+.lines{list-style:none;margin:0;padding:0}
+.lines li{padding:13px 0;border-bottom:1px solid rgba(234,231,223,.2);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.lines span{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:rgba(234,231,223,.5)}
+.lines a{text-decoration:none;border-bottom:1px solid transparent}
+.lines a:hover{color:var(--spot);border-color:var(--spot)}
+.foot{padding:26px 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(234,231,223,.45);border-top:1px solid rgba(234,231,223,.2);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* ---------- motion / a11y ---------- */
+:focus-visible{outline:2px solid var(--spot);outline-offset:3px}
+.rise{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rise.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rise{opacity:1;transform:none;transition:none}
+  .tile-img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="mark" href="#top">SD<span>.</span></a>
+    <ul>
+      <li><a href="#range">Range</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#motion">Motion</a></li>
+      <li><a href="#track">Track record</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero wrap" id="top">
+  <h1>SEHAN<em>DHANANJAYA<span class="slash">.</span></em></h1>
+  <p class="hero-meta">Marketing Manager <span class="slash">/</span> Brand &amp; Creative Lead <span class="slash">/</span> AI Content Production <span class="slash">—</span> Dubai, UAE</p>
+
+  <div class="hero-grid">
+    <div>
+      <p class="lede">Most marketers write the brief and wait. Most creatives wait for the brief. I do both — strategy, campaign, and the finished artwork — and I produce the visual assets with generative AI at a fraction of studio cost and turnaround.</p>
+      <p class="lede">Right now that means launching perfume collections in the UAE: concept, calendar, campaign, packaging and product imagery, end to end.</p>
+      <div class="btn-row">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn--ghost" href="Sehan-Dhananjaya-CV.pdf">Download CV</a>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>8+</b><span>Years across marketing &amp; creative</span></div>
+      <div class="stat"><b>32%</b><span>Year-on-year revenue growth delivered</span></div>
+      <div class="stat"><b>0→2</b><span>B2B/Marketing divisions built from scratch, UAE</span></div>
+      <div class="stat"><b>3</b><span>Languages — English, Hindi, Tamil</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- SIGNATURE SECTION: skills structured the way a fragrance is -->
+<section class="band band--ink" id="range">
+  <div class="wrap">
+    <p class="eyebrow">The composition</p>
+    <h2>Built like a fragrance.<br>Top, heart, base.</h2>
+    <p class="lede rise" style="max-width:56ch;margin-top:18px;color:rgba(234,231,223,.72)">A scent is read in three layers: what hits you first, what it actually is, and what holds it up. So is a career. Here's mine, in that order.</p>
+
+    <div class="pyr">
+      <article class="note note--top rise">
+        <p class="note-key">Top notes<small>First 30 seconds</small></p>
+        <div>
+          <h3>Marketing &amp; growth</h3>
+          <p>The part a business notices immediately — launches that land, campaigns that move numbers, budget that comes back with more than it left with.</p>
+          <ul class="tags">
+            <li>Brand strategy</li><li>Product launch</li><li>360° campaigns</li><li>Social &amp; influencer</li><li>E-commerce</li><li>Retail &amp; POP</li><li>Budget &amp; ROI</li><li>Consumer insight</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="note note--heart rise">
+        <p class="note-key">Heart notes<small>The character</small></p>
+        <div>
+          <h3>Design &amp; AI production</h3>
+          <p>Where I actually come from. Lead graphic designer for multinational corporate reporting, now art-directing packaging and campaign creative — and generating product imagery and video with AI instead of booking a studio.</p>
+          <ul class="tags">
+            <li>Art direction</li><li>Brand identity</li><li>Packaging &amp; print</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>Generative AI imaging</li><li>AI video</li><li>Prompt engineering</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="note note--base rise">
+        <p class="note-key">Base notes<small>What holds it up</small></p>
+        <div>
+          <h3>Commercial &amp; operations</h3>
+          <p>The unglamorous layer that makes the rest survive contact with reality — margin, stock, suppliers, teams, and the discipline to run a P&amp;L rather than just a mood board.</p>
+          <ul class="tags">
+            <li>B2B development</li><li>Key accounts</li><li>Negotiation</li><li>Supplier management</li><li>Inventory &amp; ERP</li><li>Lean Six Sigma</li><li>Team leadership</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band wrap" id="work">
+  <p class="eyebrow">Selected work</p>
+  <h2>Campaigns, packaging<br>and brand systems.</h2>
+
+  <div class="grid">
+    <a class="tile rise" href="work/perfume-launch.html">
+      <img class="tile-img" src="images/work-01.jpg" alt="Perfume collection launch campaign artwork" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">Fragrance / Launch</span>
+        <h3>Perfume collection launch</h3>
+        <p>Concept, packaging direction and campaign rollout for a new UAE fragrance collection.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+
+    <a class="tile rise" href="work/ai-product-photography.html">
+      <img class="tile-img" src="images/work-02.jpg" alt="AI-generated product photography" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">AI Production</span>
+        <h3>AI product photography</h3>
+        <p>Studio-grade product and lifestyle imagery generated end to end — no shoot, no set, no crew.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+
+    <a class="tile rise" href="work/enjoy-the-wood-dp-world.html">
+      <img class="tile-img" src="images/work-03.jpg" alt="Enjoy The Wood x DP World collaboration" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">B2B / Partnership</span>
+        <h3>Enjoy The Wood × DP World</h3>
+        <p>Corporate gifting collaboration — one of the tier-one B2B partnerships signed for the UAE market.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+
+    <a class="tile rise" href="work/drakon-solutions.html">
+      <img class="tile-img" src="images/work-04.jpg" alt="Drakon Solutions brand identity" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">Identity</span>
+        <h3>Drakon Solutions</h3>
+        <p>Brand identity and product design for the digital studio I co-founded in Colombo.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+
+    <a class="tile rise" href="work/corporate-reporting.html">
+      <img class="tile-img" src="images/work-05.jpg" alt="Corporate annual report design" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">Print / Editorial</span>
+        <h3>Corporate reporting</h3>
+        <p>Annual report and financial communication design for multinational clients at RR Donnelley.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+
+    <a class="tile rise" href="work/in-store-pop.html">
+      <img class="tile-img" src="images/work-06.jpg" alt="Retail point of purchase materials" onerror="this.closest('.tile').classList.add('is-empty')">
+      <div class="tile-body">
+        <span class="tile-tag">Retail</span>
+        <h3>In-store &amp; POP</h3>
+        <p>Seasonal promotional campaigns and point-of-purchase materials for high-footfall retail.</p>
+        <span class="tile-more">View project</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="band band--ink" id="motion">
+  <div class="wrap">
+    <p class="eyebrow">Motion</p>
+    <h2>Video &amp; animation.</h2>
+    <p class="lede rise" style="max-width:54ch;margin-top:18px;color:rgba(234,231,223,.72)">Brand films, kinetic typography and logo animation — art direction and edit.</p>
+
+    <div class="reels">
+
+      <!-- LANDSCAPE 16:9 — copy an <article> block to add another -->
+      <div class="reels-wide">
+        <article class="reel rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/ImSqgvRG7Xo" title="Khaltate BAIC U5 Giveaway" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Campaign film</span><h3>Khaltate BAIC U5 Giveaway</h3></div>
+        </article>
+        <article class="reel rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/YKpKmeU0_mY" title="Drakon Illusions" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Kinetic type</span><h3>Drakon Illusions</h3></div>
+        </article>
+        <article class="reel rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/WT5HqF9FqRI" title="Women's Month Web Banner" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Animated banner</span><h3>Women's Month Web Banner</h3></div>
+        </article>
+        <article class="reel rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/XcERab4SbjU" title="Back to School Web Banner" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Animated banner</span><h3>Back to School Web Banner</h3></div>
+        </article>
+      </div>
+
+      <p class="subhead">Short form</p>
+      <!-- VERTICAL 9:16 — copy an <article> block to add another -->
+      <div class="reels-shorts">
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/Lloao1BjPEI" title="Khaltate Truth" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Product promo</span><h3>Khaltate Truth</h3></div>
+        </article>
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/u1P_aF-uhCA" title="Khaltate Magic" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Product promo</span><h3>Khaltate Magic</h3></div>
+        </article>
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/pjlxsHdZDGI" title="Khaltate Fakhama" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Product promo</span><h3>Khaltate Fakhama</h3></div>
+        </article>
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/v2nSssEXszE" title="Back to School" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Social promo</span><h3>Back to School</h3></div>
+        </article>
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/GNwtRgfBEBI" title="Enjoy The Wood × DP World" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Brand film</span><h3>Enjoy The Wood × DP World</h3></div>
+        </article>
+        <article class="reel reel--vertical rise">
+          <div class="frame"><iframe src="https://www.youtube.com/embed/vBhHGhzxhqc" title="LEPOR" loading="lazy" allowfullscreen></iframe></div>
+          <div class="reel-body"><span>Logo animation</span><h3>LEPOR</h3></div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="band wrap" id="track">
+  <p class="eyebrow">Track record</p>
+  <h2>Where I've done it.</h2>
+
+  <div class="roles">
+    <article class="role rise">
+      <time>2026 — Present</time>
+      <div>
+        <h3>Digital Marketing Manager</h3>
+        <p>End-to-end perfume collection launches: creative concept, marketing calendar, 360° campaigns, packaging and product imagery, budget and ROI.</p>
+      </div>
+      <p class="where">Khaltate · Dubai</p>
+    </article>
+
+    <article class="role rise">
+      <time>2024 — 2026</time>
+      <div>
+        <h3>Operations &amp; Business Development Manager</h3>
+        <p>Built the B2B division from zero. Signed tier-one office and home furniture partnerships across the UAE, and ran e-commerce and digital campaigns.</p>
+      </div>
+      <p class="where">Enjoy The Wood GCC · Dubai</p>
+    </article>
+
+    <article class="role rise">
+      <time>2022 — 2024</time>
+      <div>
+        <h3>C-Store In Charge</h3>
+        <p>Led the store team to monthly targets across promotions, stock and supplier management. Shukran Award winner for best performance.</p>
+      </div>
+      <p class="where">ADNOC Distribution · Dubai</p>
+    </article>
+
+    <article class="role rise">
+      <time>2020 — 2022</time>
+      <div>
+        <h3>Co-Founder &amp; Head of Product Development</h3>
+        <p>Co-founded a digital products studio — product development, marketing and quality assurance on everything shipped.</p>
+      </div>
+      <p class="where">Drakon Solutions · Colombo</p>
+    </article>
+
+    <article class="role rise">
+      <time>2018 — 2019</time>
+      <div>
+        <h3>Lead Graphic Designer</h3>
+        <p>Graphic and digital media production for multinational corporate reports, to strict brand and accuracy standards.</p>
+      </div>
+      <p class="where">RR Donnelley · Sri Lanka</p>
+    </article>
+  </div>
+</section>
+
+<section class="band band--ink" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Hiring, or need the<br>work done? Say hello.</h2>
+
+    <div class="contact-grid">
+      <div>
+        <p class="lede" style="color:rgba(234,231,223,.72)">Based in Dubai and open to Marketing Manager, Senior Designer and AI content roles across the UAE. Freelance and contract projects welcome too.</p>
+        <div class="btn-row">
+          <a class="btn" style="background:var(--spot);border-color:var(--spot);color:var(--ink)" href="mailto:sehan.dhananjaya98@gmail.com">Email me</a>
+          <a class="btn" style="background:transparent;color:var(--paper-warm);border-color:rgba(234,231,223,.35)" href="Sehan-Dhananjaya-CV.pdf">Download CV</a>
+        </div>
+      </div>
+
+      <ul class="lines">
+        <li><span>Email</span><a href="mailto:sehan.dhananjaya98@gmail.com">sehan.dhananjaya98@gmail.com</a></li>
+        <li><span>Phone</span><a href="tel:+971581628055">+971 58 162 8055</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/sehan-dhananjaya/" target="_blank" rel="noopener">/in/sehan-dhananjaya</a></li>
+        <li><span>Instagram</span><a href="https://www.instagram.com/sehan_dhananjaya/" target="_blank" rel="noopener">@sehan_dhananjaya</a></li>
+        <li><span>Location</span>Dubai, United Arab Emirates</li>
+      </ul>
+    </div>
+
+    <div class="foot">
+      <span>Sehan Dhananjaya — Marketing, design &amp; AI production</span>
+      <span>Dubai, UAE</span>
+    </div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items = document.querySelectorAll('.rise');
+  if(reduce || !('IntersectionObserver' in window)){
+    items.forEach(function(el){el.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  items.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
